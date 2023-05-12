@@ -54,7 +54,7 @@ function Login() {
             style={{ paddingTop: '160px' }}
             initialValues={{ remember: true }}
             name='beach-resort-login-form'
-            // onFinish={onFinish}
+            onFinish={onFinish}
           >
             <Form.Item
               name='email'

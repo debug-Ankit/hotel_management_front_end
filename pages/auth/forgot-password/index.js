@@ -50,7 +50,7 @@ function ForgotPassword() {
             style={{ paddingTop: '200px' }}
             initialValues={{ remember: true }}
             name='beach-resort-forgot-password-form'
-            // onFinish={onFinish}
+            onFinish={onFinish}
           >
             <Form.Item
               name='email'

@@ -70,7 +70,7 @@ function Registration() {
             style={{ padding: '20px 0' }}
             initialValues={{ remember: true }}
             name='beach-resort-registration-form'
-            // onFinish={onFinish}
+            onFinish={onFinish}
           >
             <Form.Item
               name='userName'
