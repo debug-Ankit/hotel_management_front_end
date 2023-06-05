@@ -14,6 +14,7 @@ import React, { useEffect, useState } from 'react';
 import MainLayout from '../../components/layout';
 import MyProfile from '../../components/profile/MyProfile';
 import PrivateRoute from '../../components/routes/PrivateRoute';
+import BookingHistory from '../../components/profile/BookingHistory';
 
 function Profile() {
   const [activeTab, setActiveTab] = useState(1);
@@ -61,6 +62,17 @@ function Profile() {
                 ),
                 children: <MyProfile />
               },
+              {
+                key: 2,
+                label: (
+                  <span>
+                    <HistoryOutlined />
+                    {' '}
+                    Booking History
+                  </span>
+                ),
+                children: <BookingHistory />
+              }
             ]}
           />
         </div>
